@@ -36,12 +36,12 @@ const TabLayout = () => {
         screenOptions={{
           tabBarActiveTintColor: "#FFA001",
           tabBarInactiveTintColor: "#CDCDE0",
-          tabBarShowLabel: false,
           tabBarStyle: {
             backgroundColor: "#161622",
-            borderTopWidth: 1,
-            borderTopColor: "#232533",
             height: 84,
+            justifyContent: "center", // Центрирование по вертикали
+            alignItems: "center", // Центрирование по горизонтали
+            paddingTop: 24, // Отступ сверху
           },
         }}
       >
@@ -51,12 +51,7 @@ const TabLayout = () => {
             title: "Home",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
-              <TabIcon
-                icon={icons.home}
-                color={color}
-                name="Home"
-                focused={focused}
-              />
+              <TabIcon icon={icons.home} color={color} focused={focused} />
             ),
           }}
         />
@@ -82,12 +77,7 @@ const TabLayout = () => {
             title: "Create",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
-              <TabIcon
-                icon={icons.plus}
-                color={color}
-                name="Create"
-                focused={focused}
-              />
+              <TabIcon icon={icons.plus} color={color} focused={focused} />
             ),
           }}
         />
@@ -97,12 +87,7 @@ const TabLayout = () => {
             title: "Profile",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
-              <TabIcon
-                icon={icons.profile}
-                color={color}
-                name="Profile"
-                focused={focused}
-              />
+              <TabIcon icon={icons.profile} color={color} focused={focused} />
             ),
           }}
         />
